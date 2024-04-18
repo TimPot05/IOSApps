@@ -1,0 +1,147 @@
+import SwiftUI
+struct Calcview: View {
+    var body: some View {
+        ZStack{
+            
+        
+        VStack{
+            Spacer()
+            Text("0")
+                .foregroundColor(.white)
+                .font(.system(size:100))
+                .frame(maxWidth: .infinity, alignment: .trailing)
+                HStack{
+                    Circle()
+                        .foregroundColor(.lightgray)
+                        .overlay(
+                            Text("AC")
+                                .font(.largeTitle))
+                    Circle()
+                        .foregroundColor(.lightgray)
+                        .overlay(
+                            Text("+/-")
+                                .font(.largeTitle))
+                    Circle()
+                        .foregroundColor(.lightgray)
+                        .overlay(
+                            Text("%")
+                                .font(.largeTitle))
+                    Circle()
+                        .foregroundColor(.orange)
+                        .overlay(
+                            Text("÷")
+                                .foregroundColor(.white)
+                                .font(.largeTitle))
+                    
+                }
+                .frame(height: 100)
+                HStack{
+                    Circle()
+                        .foregroundColor(.Darkgray)
+                        .overlay(
+                            Text("7")
+                                .foregroundColor(.white)
+                                .font(.largeTitle))
+                    Circle()
+                        .foregroundColor(.Darkgray)
+                        .overlay(
+                            Text("8")
+                                .foregroundColor(.white)
+                                .font(.largeTitle))
+                    Circle()
+                        .foregroundColor(.Darkgray)
+                        .overlay(
+                            Text("9")
+                                .foregroundColor(.white)
+                                .font(.largeTitle))
+                    Circle()
+                        .foregroundColor(.orange)
+                        .overlay(
+                            Text("×")
+                                .foregroundColor(.white)
+                                .font(.largeTitle))
+                }
+                .frame(height: 100)
+                HStack{
+                    Circle()
+                        .foregroundColor(.Darkgray)
+                        .overlay(
+                            Text("4")
+                                .foregroundColor(.white)
+                                .font(.largeTitle))
+                    Circle()
+                        .foregroundColor(.Darkgray)
+                        .overlay(
+                            Text("5")
+                                .foregroundColor(.white)
+                                .font(.largeTitle))
+                    Circle()
+                        .foregroundColor(.Darkgray)
+                        .overlay(
+                            Text("6")
+                                .foregroundColor(.white)
+                                .font(.largeTitle))
+                    Circle()
+                        .foregroundColor(.orange)
+                        .overlay(
+                            Text("-")
+                                .foregroundColor(.white)
+                                .font(.largeTitle))
+                }
+                .frame(height: 100)
+                HStack{
+                    Circle()
+                        .foregroundColor(.Darkgray)
+                        .overlay(
+                            Text("1")
+                                .foregroundColor(.white)
+                                .font(.largeTitle))
+                    Circle()
+                        .foregroundColor(.Darkgray)
+                        .overlay(
+                            Text("2")
+                                .foregroundColor(.white)
+                                .font(.largeTitle))
+                    Circle()
+                        .foregroundColor(.Darkgray)
+                        .overlay(
+                            Text("3")
+                                .foregroundColor(.white)
+                                .font(.largeTitle))
+                    Circle()
+                        .foregroundColor(.orange)
+                        .overlay(
+                            Text("+")
+                                .foregroundColor(.white)
+                                .font(.largeTitle))
+                }
+                .frame(height: 100)
+                HStack{
+                    Capsule()
+                        .foregroundColor(.Darkgray)
+                        .overlay(
+                            Text("0")
+                                .foregroundColor(.white)
+                                .font(.largeTitle))
+                    Circle()
+                        .foregroundColor(.Darkgray)
+                        .overlay(
+                            Text(".")
+                                .foregroundColor(.white)
+                                .font(.largeTitle))
+                    Circle()
+                        .foregroundColor(.orange)
+                        .overlay(
+                            Text("=")
+                                .foregroundColor(.white)
+                                .font(.largeTitle))
+                }
+                .frame(height: 100)
+            }
+        .padding()
+        
+        }
+        .containerRelativeFrame([.horizontal,.vertical])
+        .background(Color.black.ignoresSafeArea())
+    }
+}
